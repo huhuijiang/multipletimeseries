@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import st_aggrid
 from darts import TimeSeries
 from darts.models import AutoARIMA, ExponentialSmoothing, Prophet
 from darts.dataprocessing.transformers import Scaler
