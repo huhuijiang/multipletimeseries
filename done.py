@@ -178,7 +178,7 @@ if uploaded_file is not None:
             series.plot(label='actual')
             for i, m in enumerate(models):
                     err = mse(backtests[i], series)
-                    backtests[i].plot(lw=3, label='{}, MAPE={:.2f}%'.format(m.__class__.__name__, err))
+                    backtests[i].plot(lw=3, label='{}, MSE={:.2f}%'.format(m.__class__.__name__, err))
                     
             plt.title('Backtest with 3-months forecast horizon (MSE)')
             plt.legend()
@@ -189,7 +189,7 @@ if uploaded_file is not None:
             series.plot(label='actual')
             for i, m in enumerate(models):
                     err = rmse(backtests[i], series)
-                    backtests[i].plot(lw=3, label='{}, MAPE={:.2f}%'.format(m.__class__.__name__, err))
+                    backtests[i].plot(lw=3, label='{}, RMSE={:.2f}%'.format(m.__class__.__name__, err))
                     
             plt.title('Backtest with 3-months forecast horizon (RMSE)')
             plt.legend()
