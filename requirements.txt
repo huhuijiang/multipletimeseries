@@ -5,3 +5,4 @@ pandas
 scikit_learn
 streamlit
 u8darts
+streamlit-aggrid
